@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>banana translator</title>
+    <title>banana speak</title>
+    <style>
+        textarea {
+            width: 80%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: yellow;
+        }
+
+        #output {
+            border: 1px solid black;
+            height: 10vh;
+            width: 80%;
+            margin: 1rem;
+            padding: 2rem;
+            background-color: yellow;
+        }
+
+        footer {
+            
+            height: 10vh;
+            width: 80%;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: yellow;
+        }
+    </style>
 </head>
+
 <body>
-    this is a banana translator
+    <h1> translate to banana </h1>
+    <textarea id="txt-input"
+        placeholder="type in english, get in banana"></textarea>
+    <button id="btn-translate">Translate</button>
+
+    <div style="font-size: larger;"> Output 👇</div>
+    <div id="output"></div>
+    <script src="app.js" type="text/javascript"></script>
+
+    <footer id="footer">
+        <div> translate to banana language here and share with your friends ! </div>
+    </footer>
 </body>
+
 </html>
